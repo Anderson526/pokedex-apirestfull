@@ -1,9 +1,21 @@
 import { getPokemon } from "./api";
-console.log("funciono ")
-callPokemon();
 
-function callPokemon(){
-let pokemon = getPokemon(1);
+let buttonSearch = document.getElementById("buttonPokeS");
+buttonSearch.addEventListener('click', function(){
+    let idpoke = document.getElementById('pokeSearch');
+    let idpokevalue =idpoke.value;
+    callPokemon(idpokevalue);
+
+
+})
+
+
+
+//
+
+function callPokemon(pokeid){
+
+let pokemon = getPokemon(pokeid);
 pokemon.then((res) => res.json())
 .then((res2)=>{
 
@@ -17,7 +29,6 @@ function showPokemon(name, sprites, stats) {
     let input = document.getElementById("pokeSearch");
     input.placeholder = name;
     let div = document.getElementById("pokename");
-  
     let table = `<table><tr><td>${name}</td></tr>`;
   
     for (var i = 0; i < stats.length; i++) {
@@ -28,5 +39,8 @@ function showPokemon(name, sprites, stats) {
     table += `</table>`;
   
     div.innerHTML = table;
+
+    let img = document.getElementById('pokephoto');
+    img.src = sprites.front_shiny;
   }
   
