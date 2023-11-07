@@ -4,15 +4,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="index.css">
 </head>
 <body>
+   
+  
+       
+  
+      
+    <div class="pokedex-container justify-content-center">
+        <div class="row justify-content-center">
+        <input placeholder="type the pokemon id" type="text" id="pokeSearch" class="w-80">
+        <button id="buttonPokeS" class="btn btn-primary">Search</button>
 
-    <input type="text" id="pokeSearch">
-    <button id="buttonPokeS">verify info</button>
+    </div>
 
+    <div class="row justify-content-center infocontainer">
 
-    <div id="pokename"></div>
-    <img id="pokephoto">
+     
+
+    <div class="col-md-6" id="pokename"></div>
+    <div class="col-md-4 " >
+    <img class="rounded mx-auto d-block" id="pokephoto">
+    </div>
+    </div>
+</div>
+
+   
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
     <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
     <script src="./index.js" type="module"></script>

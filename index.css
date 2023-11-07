@@ -1,0 +1,21 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.pokedex-container{
+ width: 500px;
+  
+
+}
+#pokephoto{
+    width: 200px;
+}
+.infocontainer{
+    background-image: url(/img/unnamed.png);
+    background-size: cover;
+}
+
+#pokeSearch{
+    width:420px ;
+}
